@@ -1,6 +1,6 @@
 {
   "name": "@matthew-roche-io/custom-react-components",
-  "version": "1.0.12",
+  "version": "1.2.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
