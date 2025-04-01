@@ -1,0 +1,70 @@
+{
+  "name": "@matthew-roche-io/custom-react-components",
+  "version": "1.0.7",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "webpack serve --env isLocal=true",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "tsc && vite build",
+    "build-watch": "webpack --watch",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "stylelint": "stylelint **/*.*css --ip **/*.min.css -s scss",
+    "test-watch": "jest --env=jsdom --watch",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'"
+  },
+  "keywords": [],
+  "author": "Matthew Roche",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "styled-components": "^6.1.16"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.27.0",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-essentials": "^8.6.10",
+    "@storybook/addon-interactions": "^8.6.10",
+    "@storybook/addon-onboarding": "^8.6.10",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/blocks": "^8.6.10",
+    "@storybook/react": "^8.6.10",
+    "@storybook/react-webpack5": "^8.6.10",
+    "@storybook/test": "^8.6.10",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "babel-loader": "^10.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "prettier": "^3.5.3",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.6.10",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "description": ""
+}
