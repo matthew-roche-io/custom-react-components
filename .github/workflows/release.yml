@@ -5,9 +5,7 @@ name: Node.js Package
 
 on:
   release:
-    types: [published]
-    branches:
-      - main
+    types: [created]
 
 jobs:
   build:
