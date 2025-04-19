@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import { SelectableButton } from "../";
+import { SelectableButton } from "../../../";
 
 const meta: Meta<typeof SelectableButton> = {
   title: "Roche/SelectableButton",
